@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS</title>
+    <!-- Internal CSS -->
+    <style>
+        /* * adalah selector yang digunakan untuk menyeleksi semua element html */
+        *{
+            /* padding adalah ruang kosong yang berada dalam border, atau jarak antara border dan konten */
+            padding: 0rem;
+            /* margin adalah runag kosong yang ada diluar border, atau jarak antara elemen dengan elemen di sekitarnya */
+            margin: 0rem;
+        }
+        /* selector yang menyeleksi header dan h1 */
+        header h1{
+            /* text align digunakan untuk mengatur perataan pada text, rata kiri, kanan, atau tengah */
+            text-align: center;
+            padding: 10px;
+            font-family: Poppins;
+        }
+        nav {
+            /* atribut border digunakan untuk menambahkan garis pada element */
+            border-bottom: 1px solid #262626;
+            border-top: 1px solid #262626;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a{
+            /* mengatur jenis font pada tag */
+            font-family:Arial, Helvetica, sans-serif;
+            /* menghilangkan garis pada element a */
+            text-decoration: none;
+            margin: 0px 5px;
+            /* mengatur warna text */
+            color: black;
+            padding: 5px;
+        }
+        /* kondisi saat a di hover */
+        nav a:hover{
+            background-color: #262626;
+            color: white;
+            border-radius: 3px;
+        }
+        img{
+            width: 150px;
+        }
+        .about h1{
+            padding: 5px;
+            text-align: center;
+            color: #262626;
+        }
+        .about figure img{
+            border: 1px solid salmon;
+            border-radius: 150px;
+        }
+        .about figure{
+            text-align: center;
+        }
+        figcaption{
+            width: 150px;
+            margin: 10px auto;
+            background-color: salmon;
+            color: rgb(103, 103, 103);
+        }
+        .about p{
+            margin: 10px 0px;
+            padding: 5px;
+            color: rgb(67, 67, 67);
+        }
+        .about p:nth-child(3){
+            text-align: center;
+        }
+        .about p:nth-child(4){
+            text-align: right;
+        }
+        .about p:nth-child(5){
+            text-align: left;
+        }
+
+        .portfolio img{
+            width: 100%;
+        }
+        .portfolio .thumnail img{
+            width: 33%;
+            margin: -2px;
+            padding: 0;
+            border: 1px solid salmon;
+        }
+
+        hr{
+            width: 80%;
+            margin: 20px auto
+        }
+
+        .card {
+            display: inline-block;
+            width: 32%;
+            margin: 10px auto;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            text-align: center;
+            padding: 5px;
+            background-color: white;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button{
+            padding: 5px 15px;
+            border: 1px solid salmon;
+            margin: 7px;
+            background-color: white;
+            font-weight: 400;
+        }
+
+        button:hover{
+            background-color: salmon;
+            color: white;
+
+        }
+
+        .skill, .skill div{
+           
+            height: 30px;
+        }
+
+        .skill{
+            margin: 15px;
+            border: 1px solid black;
+            padding: 2px;
+        }
+
+        .css{
+            background-color: salmon;
+            width: 80%;
+        }
+        .js{
+            background-color: salmon;
+            width: 40%;
+        }
+        .html{
+            background-color: salmon;
+            width: 90%;
+        }
+
+        .css, .js, .html{
+            text-align: center;
+            line-height: 30px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: white;
+            font-weight: 600;
+        }
+        footer {
+            border: 1px solid black;
+            padding: 10px 15px
+        }
+        ul{
+            width: 48%;
+            display: inline-block;
+            text-align: center;
+            /* list-style: */
+        }
+
+        footer{
+            color: white;
+            background-color: black;
+        }
+
+        footer p{
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .container{
+            max-width: 600px;
+            margin: 0px auto;
+            background-color: #fff;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+        }
+        body{
+            background-image: url('img/bg.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Muhammad Supri</h1>
+        </header>
+        <nav>
+            <a href="home.html">About</a>
+            <a href="home.html">Portfolio</a>
+            <a href="home.html">Service</a>
+            <a href="home.html">Skill</a>
+        </nav>
+        <main>
+            <section class="about">
+                <h1>About Me</h1>
+                <figure>
+                    <img src="img/1.png" alt="Muhammad Supri">
+                    <figcaption>Muhamamd Supri</figcaption>
+                </figure>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quam suscipit doloribus dolore at placeat necessitatibus corrupti voluptatum consequuntur officia? Sint repellendus, modi numquam incidunt tenetur quis aspernatur saepe natus officiis, delectus est, nesciunt sed vitae eos! Deleniti, accusamus, non commodi voluptates eligendi laudantium architecto delectus iure praesentium, nostrum quibusdam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, reiciendis officia voluptas vero numquam in doloremque. Ipsa veritatis aliquid est.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim atque fuga veritatis. Obcaecati, expedita repudiandae aspernatur nobis officiis consequuntur fugit harum amet nesciunt facere, voluptate maiores consequatur quidem delectus?
+                </p>
+            </section>
+            <hr>
+            <section class="portfolio">
+                <img src="img/10.png" alt="">
+                <div class="thumnail">
+                    <img src="img/2.png" alt="">
+                    <img src="img/3.png" alt="">
+                    <img src="img/4.png" alt="">
+                    <img src="img/5.png" alt="">
+                    <img src="img/6.png" alt="">
+                    <img src="img/8.png" alt="">
+                </div>
+            </section>
+            <hr>
+            <section class="service">
+                <div class="card">
+                    <img src="" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, voluptas! Doloribus amet quis quia facere.</p>
+                    <button>CSS</button>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, voluptas! Doloribus amet quis quia facere.</p>
+                    <button>CSS</button>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, voluptas! Doloribus amet quis quia facere.</p>
+                    <button>CSS</button>
+                </div>
+            </section>
+            <hr>
+            <section class="skills">
+                <div class="skill">
+                    <div class="css">CSS 80%</div>
+                </div>
+                <div class="skill">
+                    <div class="html">HTML 93%</div>
+                </div>
+                <div class="skill">
+                    <div class="js">JS 42%</div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+            <p>copyrigth by muhammad supri</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
